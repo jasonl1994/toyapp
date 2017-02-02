@@ -1,5 +1,10 @@
 <p id="notice"><%= notice %></p>
 
+<div class= "panel panel-default">
+
+<div class= "panel-heading"><h3>Micropost<h3></div>
+
+<div class= "panel-body">
 <p>
   <strong>Content:</strong>
   <%= @micropost.content %>
@@ -9,6 +14,10 @@
   <strong>User:</strong>
   <%= @micropost.user_id %>
 </p>
+</div>
 
-<%= link_to 'Edit', edit_micropost_path(@micropost) %> |
-<%= link_to 'Back', microposts_path %>
+<div class="panel-footer">
+<%= link_to 'Edit', edit_micropost_path(@micropost), class:"btn btn-xs btn-danger" %> |
+<%= link_to 'Back', microposts_path, class:"btn btn-xs btn-danger" %>
+</div>
+</div>
